@@ -16,11 +16,17 @@ class BallDetectionService: NSObject, ObservableObject, AVCaptureVideoDataOutput
     @Published var detectionState: DetectionState = .idle
     @Published var debugMotionValue: Float = 0  // For debugging
     @Published var isBaselineReady = false      // For debugging
+    @Published var ballPresenceState: BallPresenceState = .searching
     
     enum DetectionState {
         case idle
         case watchingForBall
         case detectingPutter
+    }
+
+    enum BallPresenceState {
+        case searching
+        case locked
     }
     
     // MARK: - Callbacks
@@ -137,6 +143,7 @@ class BallDetectionService: NSObject, ObservableObject, AVCaptureVideoDataOutput
         framesSinceBaseline = 0
         consecutiveMotionFrames = 0
         detectionState = .watchingForBall
+        ballPresenceState = .searching
     }
     
     // MARK: - Putter Detection Control
@@ -171,6 +178,7 @@ class BallDetectionService: NSObject, ObservableObject, AVCaptureVideoDataOutput
                 isBaselineSet = true
                 DispatchQueue.main.async {
                     self.isBaselineReady = true
+                    self.ballPresenceState = .locked
                 }
             }
             return

@@ -14,6 +14,7 @@ struct PuttingSessionView: View {
     @State private var sessionState: SessionState = .waitingForBall
     @State private var putterCountdown: Double = 6.0
     @State private var countdownTimer: Timer?
+    @State private var showHitIndicator: Bool = false
     
     enum SessionState {
         case waitingForBall      // Watching for ball to be hit
@@ -43,12 +44,20 @@ struct PuttingSessionView: View {
                     }
                     
                     Spacer()
-                    
+
                     // Stats
                     StatsView(made: puttsMade, attempted: puttsAttempted)
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 50)
+
+                // Detection status chips
+                HStack(spacing: 10) {
+                    BallPresenceChip(state: cameraService.ballPresenceState)
+
+                    HitStatusChip(isVisible: showHitIndicator)
+                }
+                .padding(.top, 10)
                 
                 Spacer()
                 
@@ -137,13 +146,18 @@ struct PuttingSessionView: View {
     private func handleBallHit() {
         sessionState = .ballHit
         puttsAttempted += 1
-        
+        showHitIndicator = true
+
         // Brief delay then wait for putter
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             sessionState = .waitingForPutter
             putterCountdown = 6.0
             startPutterCountdown()
             cameraService.startPutterDetection()
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            showHitIndicator = false
         }
     }
     
@@ -200,6 +214,61 @@ struct StatsView: View {
         .padding(.vertical, 10)
         .background(Color.black.opacity(0.6))
         .cornerRadius(20)
+    }
+}
+
+// MARK: - Ball Status Chips
+struct BallPresenceChip: View {
+    let state: BallDetectionService.BallPresenceState
+
+    var body: some View {
+        let text: String
+        let color: Color
+
+        switch state {
+        case .locked:
+            text = "Ball locked"
+            color = .green
+        case .searching:
+            text = "Looking for ball"
+            color = .orange
+        }
+
+        return HStack(spacing: 6) {
+            Circle()
+                .fill(color)
+                .frame(width: 10, height: 10)
+
+            Text(text)
+                .font(.custom("AvenirNext-Medium", size: 13))
+                .foregroundColor(.white)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(Color.black.opacity(0.55))
+        .clipShape(Capsule())
+    }
+}
+
+struct HitStatusChip: View {
+    let isVisible: Bool
+
+    var body: some View {
+        HStack(spacing: 6) {
+            Circle()
+                .fill(Color.green)
+                .frame(width: 10, height: 10)
+
+            Text("Hit detected")
+                .font(.custom("AvenirNext-Medium", size: 13))
+                .foregroundColor(.white)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(Color.green.opacity(0.35))
+        .clipShape(Capsule())
+        .opacity(isVisible ? 1 : 0)
+        .animation(.easeInOut(duration: 0.2), value: isVisible)
     }
 }
 
