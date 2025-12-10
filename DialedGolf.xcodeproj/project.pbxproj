@@ -6,13 +6,70 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		241AB1C52EE82EE2003E132C /* SlopeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241AB1C42EE82ED6003E132C /* SlopeService.swift */; };
+		241AB1C72EE83A9C003E132C /* MeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241AB1C62EE83A98003E132C /* MeasurementView.swift */; };
+		241AB1C92EE83BDD003E132C /* SpinningImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241AB1C82EE83BD8003E132C /* SpinningImage.swift */; };
+		241AB1CB2EE869DF003E132C /* VideoInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241AB1CA2EE869D7003E132C /* VideoInstructionView.swift */; };
+		241AB1CF2EE8D2C8003E132C /* TutorialVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241AB1CE2EE8D2C4003E132C /* TutorialVideoView.swift */; };
+		241AB1D12EE8D2F5003E132C /* PuttingSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241AB1D02EE8D2F1003E132C /* PuttingSessionView.swift */; };
+		241AB1D32EE8D307003E132C /* BallDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241AB1D22EE8D302003E132C /* BallDetectionService.swift */; };
+		241AB1D52EE8D3A0003E132C /* tutorial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 241AB1D42EE8D3A0003E132C /* tutorial.mp4 */; };
+		241AB1D72EE8D63D003E132C /* Potra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 241AB1D62EE8D63D003E132C /* Potra.ttf */; };
+		241AB1DB2EE8DD65003E132C /* welcome_bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 241AB1DA2EE8DD65003E132C /* welcome_bg.mp4 */; };
+		247F1DE12EE6A2AB0061AA9A /* PuttingReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1DDC2EE6A2AB0061AA9A /* PuttingReading.swift */; };
+		247F1DE22EE6A2AB0061AA9A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1DD72EE6A2AB0061AA9A /* AppState.swift */; };
+		247F1DE32EE6A2AB0061AA9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1DD82EE6A2AB0061AA9A /* ContentView.swift */; };
+		247F1DE42EE6A2AB0061AA9A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1DE02EE6A2AB0061AA9A /* WelcomeView.swift */; };
+		247F1DE62EE6A2AB0061AA9A /* DialedGolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1DD92EE6A2AB0061AA9A /* DialedGolfApp.swift */; };
+		247F1DE82EE6A2AB0061AA9A /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1DDE2EE6A2AB0061AA9A /* ResultsView.swift */; };
+		247F1DE92EE6A2AB0061AA9A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 247F1DDD2EE6A2AB0061AA9A /* README.md */; };
+		247F1DEE2EE6A3A70061AA9A /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247F1DED2EE6A3A70061AA9A /* ARKit.framework */; };
+		247F1DF22EE7F2EE0061AA9A /* ARDistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1DF12EE7F2E70061AA9A /* ARDistanceService.swift */; };
+		247F1DF42EE7F3270061AA9A /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1DF32EE7F31F0061AA9A /* ARViewContainer.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		241AB1C42EE82ED6003E132C /* SlopeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlopeService.swift; sourceTree = "<group>"; };
+		241AB1C62EE83A98003E132C /* MeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementView.swift; sourceTree = "<group>"; };
+		241AB1C82EE83BD8003E132C /* SpinningImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningImage.swift; sourceTree = "<group>"; };
+		241AB1CA2EE869D7003E132C /* VideoInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInstructionView.swift; sourceTree = "<group>"; };
+		241AB1CE2EE8D2C4003E132C /* TutorialVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVideoView.swift; sourceTree = "<group>"; };
+		241AB1D02EE8D2F1003E132C /* PuttingSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuttingSessionView.swift; sourceTree = "<group>"; };
+		241AB1D22EE8D302003E132C /* BallDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDetectionService.swift; sourceTree = "<group>"; };
+		241AB1D42EE8D3A0003E132C /* tutorial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tutorial.mp4; sourceTree = "<group>"; };
+		241AB1D62EE8D63D003E132C /* Potra.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potra.ttf; sourceTree = "<group>"; };
+		241AB1DA2EE8DD65003E132C /* welcome_bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcome_bg.mp4; sourceTree = "<group>"; };
 		247F1DC92EE6A0B00061AA9A /* DialedGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialedGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		247F1DD72EE6A2AB0061AA9A /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		247F1DD82EE6A2AB0061AA9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		247F1DD92EE6A2AB0061AA9A /* DialedGolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialedGolfApp.swift; sourceTree = "<group>"; };
+		247F1DDC2EE6A2AB0061AA9A /* PuttingReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuttingReading.swift; sourceTree = "<group>"; };
+		247F1DDD2EE6A2AB0061AA9A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		247F1DDE2EE6A2AB0061AA9A /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		247F1DE02EE6A2AB0061AA9A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		247F1DEB2EE6A2B10061AA9A /* DialedGolf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DialedGolf-Bridging-Header.h"; sourceTree = "<group>"; };
+		247F1DED2EE6A3A70061AA9A /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		247F1DF12EE7F2E70061AA9A /* ARDistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDistanceService.swift; sourceTree = "<group>"; };
+		247F1DF32EE7F31F0061AA9A /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		241AB1D92EE8D92D003E132C /* Exceptions for "DialedGolf" folder in "DialedGolf" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 247F1DC82EE6A0B00061AA9A /* DialedGolf */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		247F1DCB2EE6A0B00061AA9A /* DialedGolf */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				241AB1D92EE8D92D003E132C /* Exceptions for "DialedGolf" folder in "DialedGolf" target */,
+			);
 			path = DialedGolf;
 			sourceTree = "<group>";
 		};
@@ -23,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247F1DEE2EE6A3A70061AA9A /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +92,27 @@
 			children = (
 				247F1DCB2EE6A0B00061AA9A /* DialedGolf */,
 				247F1DCA2EE6A0B00061AA9A /* Products */,
+				247F1DF12EE7F2E70061AA9A /* ARDistanceService.swift */,
+				247F1DF32EE7F31F0061AA9A /* ARViewContainer.swift */,
+				247F1DD72EE6A2AB0061AA9A /* AppState.swift */,
+				247F1DD82EE6A2AB0061AA9A /* ContentView.swift */,
+				241AB1CE2EE8D2C4003E132C /* TutorialVideoView.swift */,
+				241AB1D02EE8D2F1003E132C /* PuttingSessionView.swift */,
+				241AB1D22EE8D302003E132C /* BallDetectionService.swift */,
+				241AB1C62EE83A98003E132C /* MeasurementView.swift */,
+				247F1DDE2EE6A2AB0061AA9A /* ResultsView.swift */,
+				241AB1C42EE82ED6003E132C /* SlopeService.swift */,
+				241AB1C82EE83BD8003E132C /* SpinningImage.swift */,
+				247F1DE02EE6A2AB0061AA9A /* WelcomeView.swift */,
+				247F1DDC2EE6A2AB0061AA9A /* PuttingReading.swift */,
+				247F1DD92EE6A2AB0061AA9A /* DialedGolfApp.swift */,
+				241AB1CA2EE869D7003E132C /* VideoInstructionView.swift */,
+				247F1DDD2EE6A2AB0061AA9A /* README.md */,
+				247F1DEB2EE6A2B10061AA9A /* DialedGolf-Bridging-Header.h */,
+				241AB1D42EE8D3A0003E132C /* tutorial.mp4 */,
+				241AB1DA2EE8DD65003E132C /* welcome_bg.mp4 */,
+				241AB1D62EE8D63D003E132C /* Potra.ttf */,
+				247F1DEC2EE6A3A70061AA9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +122,14 @@
 				247F1DC92EE6A0B00061AA9A /* DialedGolf.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		247F1DEC2EE6A3A70061AA9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				247F1DED2EE6A3A70061AA9A /* ARKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +169,7 @@
 				TargetAttributes = {
 					247F1DC82EE6A0B00061AA9A = {
 						CreatedOnToolsVersion = 26.1;
+						LastSwiftMigration = 2610;
 					};
 				};
 			};
@@ -109,6 +197,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241AB1DB2EE8DD65003E132C /* welcome_bg.mp4 in Resources */,
+				247F1DE92EE6A2AB0061AA9A /* README.md in Resources */,
+				241AB1D52EE8D3A0003E132C /* tutorial.mp4 in Resources */,
+				241AB1D72EE8D63D003E132C /* Potra.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +211,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247F1DE12EE6A2AB0061AA9A /* PuttingReading.swift in Sources */,
+				241AB1D12EE8D2F5003E132C /* PuttingSessionView.swift in Sources */,
+				241AB1CF2EE8D2C8003E132C /* TutorialVideoView.swift in Sources */,
+				247F1DF22EE7F2EE0061AA9A /* ARDistanceService.swift in Sources */,
+				247F1DE22EE6A2AB0061AA9A /* AppState.swift in Sources */,
+				247F1DE32EE6A2AB0061AA9A /* ContentView.swift in Sources */,
+				247F1DE42EE6A2AB0061AA9A /* WelcomeView.swift in Sources */,
+				241AB1CB2EE869DF003E132C /* VideoInstructionView.swift in Sources */,
+				241AB1C72EE83A9C003E132C /* MeasurementView.swift in Sources */,
+				241AB1C92EE83BDD003E132C /* SpinningImage.swift in Sources */,
+				247F1DE62EE6A2AB0061AA9A /* DialedGolfApp.swift in Sources */,
+				241AB1C52EE82EE2003E132C /* SlopeService.swift in Sources */,
+				247F1DE82EE6A2AB0061AA9A /* ResultsView.swift in Sources */,
+				241AB1D32EE8D307003E132C /* BallDetectionService.swift in Sources */,
+				247F1DF42EE7F3270061AA9A /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +285,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Dialed Golf needs camera access to measure distance on the putting green using AR.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Dialed Golf needs motion sensor access to measure the slope of the putting green.";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -236,6 +346,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Dialed Golf needs camera access to measure distance on the putting green using AR.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Dialed Golf needs motion sensor access to measure the slope of the putting green.";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -251,14 +364,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57F7AC83MF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DialedGolf/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Dialed Golf needs camera access to measure distance on the putting green using AR.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Dialed Golf needs motion sensor access to measure the slope of the putting green.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -269,12 +387,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DialedGolf.DialedGolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DialedGolf-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -283,14 +407,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57F7AC83MF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DialedGolf/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Dialed Golf needs camera access to measure distance on the putting green using AR.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Dialed Golf needs motion sensor access to measure the slope of the putting green.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,12 +430,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DialedGolf.DialedGolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DialedGolf-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

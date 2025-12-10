@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSCameraUsageDescription</key>
+    <string>Dialed Golf needs camera access to measure distance on the putting green using AR.</string>
+    <key>NSMotionUsageDescription</key>
+    <string>Dialed Golf needs motion sensor access to measure the slope of the putting green.</string>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arkit</string>
+    </array>
+</dict>
+</plist>
